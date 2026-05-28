@@ -1,0 +1,3 @@
+[submodule "05_deliverables/whisper_app"]
+	path = 05_deliverables/whisper_app
+	url = ghub:Berbass/whisper.git
