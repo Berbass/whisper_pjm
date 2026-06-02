@@ -11,6 +11,7 @@
   - Append detailed execution comments (logs) on what has been accomplished directly in the task file.
   - **Blockers & Scope:** If a task is blocked or the scope is found to be too large, document this in the execution log and pause to consult the Project Manager.
   - Move the task file to `2_in_review/` and update its status inside the YAML frontmatter to `in_review` when complete, and reflect this state in `00_DASHBOARD.md`.
+  - When a task is moved to `in_review`, commit all changes related to the deliverables.
 
 ### 2. Reviewer
 * **Objective:** Verify and assure the quality of completed work.
@@ -48,5 +49,5 @@
 * **Rule:** Strict commit structure and staging rules must be adhered to during task lifecycles.
 * **Requirements:**
   - Before any task is considered completed or moved to `in_review`, all related changes to the project and its deliverables must be fully staged and committed.
-  - Every commit message **must** explicitly mention the related task's ID (e.g., `feat(T-009): implement specific weekday scheduling`, `fix(T-010): resolve dismissible crash`) along with clear, descriptive details of what was changed.
-  - Never mix changes from multiple tasks into a single commit. Keep git history clean and task-focused.
+  - Every commit message **must** explicitly mention the related task's ID (e.g., `feat(T-009): implement specific weekday scheduling`, `fix(T-010): resolve dismissible crash`) along with clear, descriptive details of what was changed. Multiple lines of context are allowed.
+  - Avoid mixing changes from multiple tasks into a single commit. Keep git history clean and task-focused.
