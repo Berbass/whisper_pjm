@@ -8,8 +8,8 @@
 |---------------|-------|
 | ✅ Done        | 13    |
 | 🔄 In Progress | 0     |
-| 🔍 In Review   | 0     |
-| 📋 To Do       | 0     |
+| 🔍 In Review   | 1     |
+| 📋 To Do       | 2     |
 
 ---
 
@@ -30,6 +30,9 @@
 | T-011 | Implement Unit Tests for Interval Scheduling| ✅ done | agent_zed   |
 | T-012 | Implement Widget Tests for UI Components    | ✅ done | agent_zed   |
 | T-013 | Implement Unit Tests for Domain Models      | ✅ done | agent_zed   |
+| T-014 | Fix UI/UX Issues in Creation Form           | 🔍 in_review | zed_agent   |
+| T-015 | Enhance Notification Actions                | 📋 todo | unassigned  |
+| T-016 | Interactive Reminder Detail & Inline Editing| 📋 todo | unassigned  |
 
 ---
 
