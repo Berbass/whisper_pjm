@@ -6,7 +6,7 @@
 
 | Status        | Count |
 |---------------|-------|
-| ✅ Done        | 16    |
+| ✅ Done        | 17    |
 | 🔄 In Progress | 0     |
 | 🔍 In Review   | 0     |
 | 📋 To Do       | 0     |
@@ -30,9 +30,10 @@
 | T-011 | Implement Unit Tests for Interval Scheduling| ✅ done | agent_zed   |
 | T-012 | Implement Widget Tests for UI Components    | ✅ done | agent_zed   |
 | T-013 | Implement Unit Tests for Domain Models      | ✅ done | agent_zed   |
-| T-014 | Fix UI/UX Issues in Creation Form           | ✅ done | zed_agent   |
+| T-014 | Fix UI/UX Issues in Creation Form           | ✅ done | unassigned  |
 | T-015 | Enhance Notification Actions                | ✅ done | agent_zed   |
 | T-016 | Interactive Reminder Detail & Inline Editing| ✅ done | agent_zed   |
+| T-017 | Update Date Selector for Repetitions        | ✅ done | agent_zed   |
 
 ---
 
@@ -88,4 +89,4 @@ test/
 - `flutter pub get` — all dependencies resolved ✅
 - `flutter pub run build_runner build` — `reminder.g.dart` generated ✅
 - `flutter analyze` — no issues ✅
-- `flutter test` — 100/100 tests passed ✅
+- `flutter test` — 107/107 tests passed ✅
