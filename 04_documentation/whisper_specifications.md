@@ -44,6 +44,7 @@ Whisper's design language focuses on calm, modern UI principles, avoiding clutte
 - **Haptic Feedback:** Gentle haptics on reminder creation, acknowledgement, and removal.
 - **Fluid Sheets:** Creating/editing reminders and inspirations happens in an elegant, interactive bottom sheet that pulls up smoothly.
 - **Swipe-to-Dismiss:** Swiping a reminder card right triggers "Acknowledge" (silently marking it as seen/read), while swiping left reveals options to edit or delete.
+- **Visual Feedback for Async Actions:** Any user action that might take time to execute (such as saving, updating, deleting, or acknowledging a reminder) **must** instantly display a visual loading state. This usually means disabling the primary action button and replacing its icon with a small loading indicator (e.g., `CircularProgressIndicator`) to prevent duplicate submissions and ensure the interface feels immediately responsive.
 
 ## 3. Functional Specifications
 
