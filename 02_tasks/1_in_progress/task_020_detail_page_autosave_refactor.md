@@ -1,8 +1,8 @@
 ---
 id: T-020
 title: "Refactor Reminder Detail Page UI & Auto-Save"
-status: todo
-assigned_to: unassigned
+status: in_progress
+assigned_to: agent_zed
 dependencies: []
 completion_percentage: 0%
 last_updated: 2026-06-03

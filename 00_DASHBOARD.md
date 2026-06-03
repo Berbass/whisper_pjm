@@ -1,6 +1,6 @@
 # 00 — Project Dashboard
 
-> Last updated: 2026-06-03 · Updated by: reviewer
+> Last updated: 2026-06-04 · Updated by: worker
 
 ## Sprint Summary
 
@@ -8,8 +8,8 @@
 |---------------|-------|
 | ✅ Done        | 17    |
 | 🔄 In Progress | 0     |
-| 🔍 In Review   | 0     |
-| 📋 To Do       | 5     |
+| 🔍 In Review   | 1     |
+| 📋 To Do       | 4     |
 
 ---
 
@@ -34,10 +34,10 @@
 | T-015 | Enhance Notification Actions                | ✅ done | agent_zed   |
 | T-016 | Interactive Reminder Detail & Inline Editing| ✅ done | agent_zed   |
 | T-017 | Update Date Selector for Repetitions        | ✅ done | agent_zed   |
-| T-018 | Fix Background Notification Actions         | 📋 todo | unassigned  |
+| T-018 | Fix Background Notification Actions         | 🔍 in_review | agent_zed   |
 | T-019 | Improve Time Logic for "Once" Reminders     | 📋 todo | unassigned  |
-| T-020 | Refactor Detail Page UI & Auto-Save         | 📋 todo | unassigned  |
-| T-021 | Dashboard Enhancements                      | 📋 todo | unassigned  |
+| T-020 | Refactor Detail Page UI & Auto-Save         | 🔄 in_progress | agent_zed   |
+| T-021 | Dashboard Enhancements                      | 🔄 in_progress | agent_zed   |
 | T-022 | Creation Form UI/UX Polish                  | 📋 todo | unassigned  |
 
 ---
