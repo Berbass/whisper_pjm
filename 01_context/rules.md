@@ -5,7 +5,7 @@
 ### 1. Worker (Developer)
 * **Objective:** Take up tasks to be completed.
 * **Responsibilities:**
-  - Execute tasks according to the requirements, technical documentation in `04_documentation/`, and global context in `01_context/`.
+  - Execute tasks according to the requirements, technical documentation in `01_context/documentation/`, and global context in `01_context/`.
   - **Self-Verification:** Ensure code compiles, `flutter analyze` passes, and all tests succeed (`flutter test`) before declaring work complete. Adhere strictly to the "Test-Driven & Verified Code Changes" rule.
   - **State Management:** When picking up a task, update its status in `00_DASHBOARD.md` to `in_progress`.
   - Append detailed execution comments (logs) on what has been accomplished directly in the task file.
@@ -16,7 +16,7 @@
 ### 2. Reviewer
 * **Objective:** Verify and assure the quality of completed work.
 * **Responsibilities:**
-  - Review tasks currently marked as `in_review` by examining descriptions, developer logs, and final outputs in `05_deliverables/`.
+  - Review tasks currently marked as `in_review` by examining descriptions, developer logs, and final outputs in `04_deliverables/`.
   - Ensure the work aligns perfectly with tasks specifications and enforces project rules (e.g., verifying that adequate tests were actually written).
   - If any structural or important architectural decisions are made during the task, document them in an Architecture Decision Record (ADR) file inside `01_context/adr/`.
   - **If changes are needed:** Add actionable, specific feedback comments (referencing file paths/lines) to the task file. Update the YAML status to `todo`, move it back to `0_todo/`, and update `00_DASHBOARD.md` accordingly.

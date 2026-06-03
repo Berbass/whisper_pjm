@@ -12,9 +12,9 @@ The overall workspace encompasses an AI-driven management structure containing p
 Additionally, interactions with the designated GitHub remote require a specific SSH identity, to avoid conflicts with other local SSH keys.
 
 ## Decision
-1. **Separate App Repository**: We initialized a distinct Git repository specifically for the Flutter source code inside `05_deliverables/whisper_app/`.
+1. **Separate App Repository**: We initialized a distinct Git repository specifically for the Flutter source code inside `04_deliverables/whisper_app/`.
 2. **Remote Link**: The app repository is linked directly to the remote GitHub repository using the custom SSH host: `ghub:Berbass/whisper.git`. The parent repository is linked to `ghub:Berbass/intel_project_template.git`.
-3. **Git Submodule**: To maintain structural integrity and a unified entry point, `05_deliverables/whisper_app/` is integrated as a **Git submodule** into the parent AI-management project root (tracked via `.gitmodules`).
+3. **Git Submodule**: To maintain structural integrity and a unified entry point, `04_deliverables/whisper_app/` is integrated as a **Git submodule** into the parent AI-management project root (tracked via `.gitmodules`).
 4. **SSH Authentication (`ghub` SSH Host)**: Interactions with the remote repository must utilize the dedicated SSH host alias `ghub` (configured via `~/.ssh/config` pointing to the correct identity file) in the remote URL (e.g., `git remote add origin ghub:...`) instead of the default `github.com`. This ensures pushes and pulls are successfully authenticated under the proper GitHub profile.
 
 ## Consequences
@@ -24,5 +24,5 @@ Additionally, interactions with the designated GitHub remote require a specific 
 * **Authentication Reliability**: The `ghub` SSH Host alias reliably maps to the correct deployment/developer keys transparently when using standard `git` commands, preventing authentication errors.
 
 ### Negative / Considerations
-* **Cloning Complexity**: Future developers or automated systems cloning the parent workspace must use `git clone --recurse-submodules` or run `git submodule update --init` to populate the `05_deliverables/whisper_app` directory.
-* **Two-Step Commits**: When source code is updated, agents/developers must first commit and push from within the `05_deliverables/whisper_app/` repository, and then commit the updated submodule reference hash in the parent repository.
+* **Cloning Complexity**: Future developers or automated systems cloning the parent workspace must use `git clone --recurse-submodules` or run `git submodule update --init` to populate the `04_deliverables/whisper_app` directory.
+* **Two-Step Commits**: When source code is updated, agents/developers must first commit and push from within the `04_deliverables/whisper_app/` repository, and then commit the updated submodule reference hash in the parent repository.

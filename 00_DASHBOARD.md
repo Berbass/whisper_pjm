@@ -44,7 +44,7 @@
 
 ## Deliverable
 
-Flutter project at `05_deliverables/whisper_app/`
+Flutter project at `04_deliverables/whisper_app/`
 
 ### Structure
 
