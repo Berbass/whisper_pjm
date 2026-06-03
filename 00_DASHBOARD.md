@@ -7,9 +7,9 @@
 | Status        | Count |
 |---------------|-------|
 | ✅ Done        | 17    |
-| 🔄 In Progress | 0     |
-| 🔍 In Review   | 1     |
-| 📋 To Do       | 4     |
+| 🔄 In Progress | 1     |
+| 🔍 In Review   | 2     |
+| 📋 To Do       | 2     |
 
 ---
 
@@ -37,7 +37,7 @@
 | T-018 | Fix Background Notification Actions         | 🔍 in_review | agent_zed   |
 | T-019 | Improve Time Logic for "Once" Reminders     | 📋 todo | unassigned  |
 | T-020 | Refactor Detail Page UI & Auto-Save         | 🔄 in_progress | agent_zed   |
-| T-021 | Dashboard Enhancements                      | 🔄 in_progress | agent_zed   |
+| T-021 | Dashboard Enhancements                      | 🔍 in_review | agent_zed   |
 | T-022 | Creation Form UI/UX Polish                  | 📋 todo | unassigned  |
 
 ---
