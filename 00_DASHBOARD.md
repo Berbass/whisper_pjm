@@ -9,7 +9,7 @@
 | ✅ Done        | 17    |
 | 🔄 In Progress | 0     |
 | 🔍 In Review   | 0     |
-| 📋 To Do       | 0     |
+| 📋 To Do       | 5     |
 
 ---
 
@@ -34,6 +34,11 @@
 | T-015 | Enhance Notification Actions                | ✅ done | agent_zed   |
 | T-016 | Interactive Reminder Detail & Inline Editing| ✅ done | agent_zed   |
 | T-017 | Update Date Selector for Repetitions        | ✅ done | agent_zed   |
+| T-018 | Fix Background Notification Actions         | 📋 todo | unassigned  |
+| T-019 | Improve Time Logic for "Once" Reminders     | 📋 todo | unassigned  |
+| T-020 | Refactor Detail Page UI & Auto-Save         | 📋 todo | unassigned  |
+| T-021 | Dashboard Enhancements                      | 📋 todo | unassigned  |
+| T-022 | Creation Form UI/UX Polish                  | 📋 todo | unassigned  |
 
 ---
 
