@@ -1,7 +1,7 @@
 ---
 id: T-018
 title: "Fix Background Notification Actions"
-status: in_review
+status: done
 assigned_to: agent_zed
 dependencies: []
 completion_percentage: 100%
