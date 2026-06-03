@@ -6,9 +6,9 @@
 
 | Status        | Count |
 |---------------|-------|
-| ✅ Done        | 18    |
+| ✅ Done        | 19    |
 | 🔄 In Progress | 0     |
-| 🔍 In Review   | 1     |
+| 🔍 In Review   | 0     |
 | 📋 To Do       | 2     |
 
 ---
@@ -36,7 +36,7 @@
 | T-017 | Update Date Selector for Repetitions        | ✅ done | agent_zed   |
 | T-018 | Fix Background Notification Actions         | ✅ done | agent_zed   |
 | T-019 | Improve Time Logic for "Once" Reminders     | 📋 todo | unassigned  |
-| T-020 | Refactor Detail Page UI & Auto-Save         | 🔍 in_review | agent_zed   |
+| T-020 | Refactor Detail Page UI & Auto-Save         | ✅ done | agent_zed   |
 | T-021 | Dashboard Enhancements                      | ✅ done | agent_zed   |
 | T-022 | Creation Form UI/UX Polish                  | 📋 todo | unassigned  |
 
@@ -94,4 +94,4 @@ test/
 - `flutter pub get` — all dependencies resolved ✅
 - `flutter pub run build_runner build` — `reminder.g.dart` generated ✅
 - `flutter analyze` — no issues ✅
-- `flutter test` — 107/107 tests passed ✅
+- `flutter test` — 138/138 tests passed ✅
