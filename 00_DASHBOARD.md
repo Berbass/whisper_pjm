@@ -6,10 +6,10 @@
 
 | Status        | Count |
 |---------------|-------|
-| ✅ Done        | 19    |
-| 🔄 In Progress | 0     |
+| ✅ Done        | 20    |
+| 🔄 In Progress | 2     |
 | 🔍 In Review   | 0     |
-| 📋 To Do       | 2     |
+| 📋 To Do       | 0     |
 
 ---
 
@@ -35,10 +35,10 @@
 | T-016 | Interactive Reminder Detail & Inline Editing| ✅ done | agent_zed   |
 | T-017 | Update Date Selector for Repetitions        | ✅ done | agent_zed   |
 | T-018 | Fix Background Notification Actions         | ✅ done | agent_zed   |
-| T-019 | Improve Time Logic for "Once" Reminders     | 📋 todo | unassigned  |
-| T-020 | Refactor Detail Page UI & Auto-Save         | ✅ done | agent_zed   |
-| T-021 | Dashboard Enhancements                      | ✅ done | agent_zed   |
-| T-022 | Creation Form UI/UX Polish                  | 📋 todo | unassigned  |
+| T-019 | Improve Time Logic for "Once" Reminders     | ✅ done | agent_zed   |
+| T-020 | Refactor Detail Page UI & Auto-Save         | 🔄 in_progress | agent_zed   |
+| T-021 | Dashboard Enhancements                      | 🔄 in_progress | agent_zed   |
+| T-022 | Creation Form UI/UX Polish                  | ✅ done | agent_zed   |
 
 ---
 
@@ -84,7 +84,8 @@ test/
 ├── scheduler_frequency_test.dart              # Frequency scheduling unit tests (20 tests)
 ├── scheduler_interval_test.dart               # Interval scheduling unit tests (22 tests)
 ├── reminder_model_test.dart                   # Domain model unit tests (27 tests)
-├── creation_bottom_sheet_test.dart            # CreationBottomSheet widget tests (6 tests)
+├── once_reminder_time_logic_test.dart         # onceShouldConfirmNextDay unit tests (10 tests)
+├── creation_bottom_sheet_test.dart            # CreationBottomSheet widget tests (15 tests)
 ├── dashboard_screen_test.dart                 # DashboardScreen widget tests (7 tests)
 └── reminder_detail_screen_test.dart           # ReminderDetailScreen widget tests (17 tests)
 ```
@@ -94,4 +95,4 @@ test/
 - `flutter pub get` — all dependencies resolved ✅
 - `flutter pub run build_runner build` — `reminder.g.dart` generated ✅
 - `flutter analyze` — no issues ✅
-- `flutter test` — 138/138 tests passed ✅
+- `flutter test` — 146/146 tests passed ✅
