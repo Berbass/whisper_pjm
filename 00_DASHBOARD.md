@@ -37,7 +37,7 @@
 | T-018 | Fix Background Notification Actions         | ✅ done | agent_zed   |
 | T-019 | Improve Time Logic for "Once" Reminders     | 📋 todo | unassigned  |
 | T-020 | Refactor Detail Page UI & Auto-Save         | 🔍 in_review | agent_zed   |
-| T-021 | Dashboard Enhancements                      | 🔍 in_review | agent_zed   |
+| T-021 | Dashboard Enhancements                      | ✅ done | agent_zed   |
 | T-022 | Creation Form UI/UX Polish                  | 📋 todo | unassigned  |
 
 ---
