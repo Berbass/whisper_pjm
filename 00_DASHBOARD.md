@@ -6,9 +6,9 @@
 
 | Status        | Count |
 |---------------|-------|
-| ✅ Done        | 26    |
+| ✅ Done        | 27    |
 | 🔄 In Progress | 0     |
-| 🔍 In Review   | 1     |
+| 🔍 In Review   | 0     |
 | 📋 To Do       | 2     |
 
 ---
@@ -43,7 +43,7 @@
 | T-024 | Refactor Dashboard & Detail for Archiving   | ✅ done | agent_zed   |
 | T-025 | Update Creation Form for Pre-filling        | 📋 todo | unassigned  |
 | T-026 | Implement Archive Screen & Swipe Actions    | 📋 todo | unassigned  |
-| T-027 | Implement JSON Export/Import Backup System  | 🔍 in_review | agent_zed   |
+| T-027 | Implement JSON Export/Import Backup System  | ✅ done | agent_zed   |
 
 ---
 
@@ -69,6 +69,7 @@ lib/
 │   │   ├── reminder.dart                  # @collection Reminder + @embedded RecurrenceRule
 │   │   └── reminder.g.dart                # Isar-generated schema (build_runner)
 │   └── services/
+│       ├── backup_service.dart              # JSON export/import + BackupService (share sheet, file picker)
 │       └── notification_service.dart      # flutter_local_notifications + deep-link handling
 ├── presentation/
 │   ├── navigation/
@@ -85,7 +86,7 @@ lib/
 └── main.dart                              # IsarService + NotificationService init + ProviderScope
 ```
 
-test/
+└── test/
 ├── widget_test.dart                           # App shell smoke test
 ├── scheduler_frequency_test.dart              # Frequency scheduling unit tests (20 tests)
 ├── scheduler_interval_test.dart               # Interval scheduling unit tests (22 tests)
@@ -94,7 +95,8 @@ test/
 ├── creation_bottom_sheet_test.dart            # CreationBottomSheet widget tests (15 tests)
 ├── dashboard_screen_test.dart                 # DashboardScreen widget tests (7 tests)
 ├── reminder_detail_screen_test.dart           # ReminderDetailScreen widget tests (17 tests)
-└── archive_screen_test.dart                   # ArchiveScreen widget tests (12 tests)
+├── archive_screen_test.dart                   # ArchiveScreen widget tests (12 tests)
+└── backup_service_test.dart                   # JSON backup serialisation unit tests (22 tests)
 ```
 
 ### Validation
@@ -102,4 +104,4 @@ test/
 - `flutter pub get` — all dependencies resolved ✅
 - `flutter pub run build_runner build` — `reminder.g.dart` generated ✅
 - `flutter analyze` — 1 pre-existing warning (unused import in notification_service.dart) ✅
-- `flutter test` — 167/167 tests passed ✅
+- `flutter test` — 189/189 tests passed ✅
