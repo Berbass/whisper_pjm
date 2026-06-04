@@ -9,7 +9,7 @@
 | ✅ Done        | 26    |
 | 🔄 In Progress | 0     |
 | 🔍 In Review   | 0     |
-| 📋 To Do       | 0     |
+| 📋 To Do       | 3     |
 
 ---
 
@@ -41,8 +41,9 @@
 | T-022 | Creation Form UI/UX Polish                  | ✅ done | agent_zed   |
 | T-023 | Database Archiving & Startup Cleanup        | ✅ done | agent_zed   |
 | T-024 | Refactor Dashboard & Detail for Archiving   | ✅ done | agent_zed   |
-| T-025 | Update Creation Form for Pre-filling        | ✅ done | agent_zed   |
-| T-026 | Implement Archive Screen & Swipe Actions    | ✅ done | agent       |
+| T-025 | Update Creation Form for Pre-filling        | 📋 todo | unassigned  |
+| T-026 | Implement Archive Screen & Swipe Actions    | 📋 todo | unassigned  |
+| T-027 | Implement JSON Export/Import Backup System  | 📋 todo | unassigned  |
 
 ---
 
