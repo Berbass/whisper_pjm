@@ -7,7 +7,7 @@
 * **Responsibilities:**
   - Execute tasks according to the requirements, technical documentation in `01_context/documentation/`, and global context in `01_context/`.
   - **Self-Verification:** Ensure code compiles, `flutter analyze` passes, and all tests succeed (`flutter test`) before declaring work complete. Adhere strictly to the "Test-Driven & Verified Code Changes" rule.
-  - **State Management:** When picking up a task, update its status in `00_DASHBOARD.md` to `in_progress`.
+  - **State Management:** When picking up a task, update the task file's YAML frontmatter status to `in_progress`, move the task file to `1_in_progress/`, and reflect this state in `00_DASHBOARD.md`.
   - Append detailed execution comments (logs) on what has been accomplished directly in the task file.
   - **Blockers & Scope:** If a task is blocked or the scope is found to be too large, document this in the execution log and pause to consult the Project Manager.
   - Move the task file to `2_in_review/` and update its status inside the YAML frontmatter to `in_review` when complete, and reflect this state in `00_DASHBOARD.md`.
