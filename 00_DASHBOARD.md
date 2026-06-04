@@ -1,6 +1,6 @@
 # 00 — Project Dashboard
 
-> Last updated: 2026-06-04 · Updated by: reviewer
+> Last updated: 2026-06-04 · Updated by: worker
 
 ## Sprint Summary
 
@@ -8,8 +8,8 @@
 |---------------|-------|
 | ✅ Done        | 25    |
 | 🔄 In Progress | 0     |
-| 🔍 In Review   | 0     |
-| 📋 To Do       | 1     |
+| 🔍 In Review   | 1     |
+| 📋 To Do       | 0     |
 
 ---
 
@@ -42,7 +42,7 @@
 | T-023 | Database Archiving & Startup Cleanup        | ✅ done | agent_zed   |
 | T-024 | Refactor Dashboard & Detail for Archiving   | ✅ done | agent_zed   |
 | T-025 | Update Creation Form for Pre-filling        | ✅ done | agent_zed   |
-| T-026 | Implement Archive Screen & Swipe Actions    | 📋 todo | unassigned  |
+| T-026 | Implement Archive Screen & Swipe Actions    | 🔍 in_review | agent       |
 
 ---
 
@@ -71,11 +71,12 @@ lib/
 │       └── notification_service.dart      # flutter_local_notifications + deep-link handling
 ├── presentation/
 │   ├── navigation/
-│   │   └── app_router.dart                # GlobalKey<NavigatorState> + goToReminderDetail
+│   │   └── app_router.dart                # GlobalKey<NavigatorState> + goToReminderDetail + goToArchive
 │   ├── providers/
-│   │   └── reminder_provider.dart         # Riverpod StreamProvider for reminders list
+│   │   └── reminder_provider.dart         # Riverpod StreamProviders: remindersProvider + archivedRemindersProvider
 │   ├── screens/
-│   │   ├── dashboard_screen.dart          # Main list view + FAB + cold-start deep-link
+│   │   ├── archive_screen.dart            # Archive list: left-swipe delete, right-swipe resurrect
+│   │   ├── dashboard_screen.dart          # Main list view + FAB + history icon → ArchiveScreen
 │   │   └── reminder_detail_screen.dart    # Full detail view (deep-link target)
 │   └── widgets/
 │       ├── reminder_card.dart             # Card with border/dark-navy variants
@@ -91,12 +92,13 @@ test/
 ├── once_reminder_time_logic_test.dart         # onceShouldConfirmNextDay unit tests (10 tests)
 ├── creation_bottom_sheet_test.dart            # CreationBottomSheet widget tests (15 tests)
 ├── dashboard_screen_test.dart                 # DashboardScreen widget tests (7 tests)
-└── reminder_detail_screen_test.dart           # ReminderDetailScreen widget tests (17 tests)
+├── reminder_detail_screen_test.dart           # ReminderDetailScreen widget tests (17 tests)
+└── archive_screen_test.dart                   # ArchiveScreen widget tests (12 tests)
 ```
 
 ### Validation
 
 - `flutter pub get` — all dependencies resolved ✅
 - `flutter pub run build_runner build` — `reminder.g.dart` generated ✅
-- `flutter analyze` — no issues ✅
-- `flutter test` — 155/155 tests passed ✅
+- `flutter analyze` — 1 pre-existing warning (unused import in notification_service.dart) ✅
+- `flutter test` — 167/167 tests passed ✅
