@@ -6,10 +6,10 @@
 
 | Status        | Count |
 |---------------|-------|
-| ✅ Done        | 24    |
+| ✅ Done        | 25    |
 | 🔄 In Progress | 0     |
 | 🔍 In Review   | 0     |
-| 📋 To Do       | 2     |
+| 📋 To Do       | 1     |
 
 ---
 
@@ -41,7 +41,7 @@
 | T-022 | Creation Form UI/UX Polish                  | ✅ done | agent_zed   |
 | T-023 | Database Archiving & Startup Cleanup        | ✅ done | agent_zed   |
 | T-024 | Refactor Dashboard & Detail for Archiving   | ✅ done | agent_zed   |
-| T-025 | Update Creation Form for Pre-filling        | 📋 todo | unassigned  |
+| T-025 | Update Creation Form for Pre-filling        | ✅ done | agent_zed   |
 | T-026 | Implement Archive Screen & Swipe Actions    | 📋 todo | unassigned  |
 
 ---
@@ -99,4 +99,4 @@ test/
 - `flutter pub get` — all dependencies resolved ✅
 - `flutter pub run build_runner build` — `reminder.g.dart` generated ✅
 - `flutter analyze` — no issues ✅
-- `flutter test` — 146/146 tests passed ✅
+- `flutter test` — 155/155 tests passed ✅
