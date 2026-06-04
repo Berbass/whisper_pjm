@@ -8,8 +8,8 @@
 |---------------|-------|
 | ✅ Done        | 26    |
 | 🔄 In Progress | 0     |
-| 🔍 In Review   | 0     |
-| 📋 To Do       | 3     |
+| 🔍 In Review   | 1     |
+| 📋 To Do       | 2     |
 
 ---
 
@@ -43,7 +43,7 @@
 | T-024 | Refactor Dashboard & Detail for Archiving   | ✅ done | agent_zed   |
 | T-025 | Update Creation Form for Pre-filling        | 📋 todo | unassigned  |
 | T-026 | Implement Archive Screen & Swipe Actions    | 📋 todo | unassigned  |
-| T-027 | Implement JSON Export/Import Backup System  | 📋 todo | unassigned  |
+| T-027 | Implement JSON Export/Import Backup System  | 🔍 in_review | agent_zed   |
 
 ---
 
