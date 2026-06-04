@@ -1,14 +1,14 @@
 # 00 — Project Dashboard
 
-> Last updated: 2026-06-04 · Updated by: worker
+> Last updated: 2026-06-04 · Updated by: reviewer
 
 ## Sprint Summary
 
 | Status        | Count |
 |---------------|-------|
-| ✅ Done        | 25    |
+| ✅ Done        | 26    |
 | 🔄 In Progress | 0     |
-| 🔍 In Review   | 1     |
+| 🔍 In Review   | 0     |
 | 📋 To Do       | 0     |
 
 ---
@@ -42,7 +42,7 @@
 | T-023 | Database Archiving & Startup Cleanup        | ✅ done | agent_zed   |
 | T-024 | Refactor Dashboard & Detail for Archiving   | ✅ done | agent_zed   |
 | T-025 | Update Creation Form for Pre-filling        | ✅ done | agent_zed   |
-| T-026 | Implement Archive Screen & Swipe Actions    | 🔍 in_review | agent       |
+| T-026 | Implement Archive Screen & Swipe Actions    | ✅ done | agent       |
 
 ---
 

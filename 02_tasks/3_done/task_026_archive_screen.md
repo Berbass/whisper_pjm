@@ -1,7 +1,7 @@
 ---
 id: T-026
 title: "Implement Archive Screen & Swipe Actions"
-status: in_review
+status: done
 assigned_to: agent
 dependencies: [T-023, T-024, T-025]
 completion_percentage: 100%
@@ -50,3 +50,20 @@ Create a dedicated screen to view archived reminders, complete with its own spec
 ### Validation
 - `flutter analyze`: 1 pre-existing warning (`unused_import` in `notification_service.dart`) — not introduced by this task.
 - `flutter test`: **167/167 tests passed** (12 new, 155 pre-existing).
+
+## 2026-06-04 — Reviewer
+
+### Review Outcome: APPROVED ✅
+
+**Acceptance Criteria**: All 4 criteria verified against the implementation.
+
+**Code Quality**:
+- Architecture is clean and additive. `watchArchivedReminders()` correctly queries the Isar index on `archivedAt` with `.archivedAtIsNotNull().sortByArchivedAtDesc()`.
+- `ArchiveScreen` uses `ConsumerWidget` (correct choice — no local mutable state needed). All helper methods as instance methods on the widget follow established patterns.
+- Error handling mirrors the Dashboard pattern: `try-catch` around `IsarService` calls with silent swallow.
+- `Dismissible` keys use `'archive_${reminder.id}'` prefix to avoid key conflicts.
+- Visual design is consistent: `AppConstants` layout constants, `theme.colorScheme` tokens, same `_dismissBg` helper shape.
+
+**Tests**: 12 widget tests cover all states and swipe flows. Provider override pattern is consistent with existing tests. The "Delete dismisses tile" test comment correctly explains why it only checks dialog dismissal (Isar not available in test env, try-catch swallows).
+
+**No ADR required** — no structural or architectural decisions; this is additive feature work following established patterns.
