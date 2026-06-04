@@ -9,7 +9,7 @@
 | ✅ Done        | 22    |
 | 🔄 In Progress | 0     |
 | 🔍 In Review   | 0     |
-| 📋 To Do       | 0     |
+| 📋 To Do       | 4     |
 
 ---
 
@@ -39,6 +39,10 @@
 | T-020 | Refactor Detail Page UI & Auto-Save         | ✅ done | agent_zed   |
 | T-021 | Dashboard Enhancements                      | ✅ done | agent_zed   |
 | T-022 | Creation Form UI/UX Polish                  | ✅ done | agent_zed   |
+| T-023 | Database Archiving & Startup Cleanup        | 📋 todo | unassigned  |
+| T-024 | Refactor Dashboard & Detail for Archiving   | 📋 todo | unassigned  |
+| T-025 | Update Creation Form for Pre-filling        | 📋 todo | unassigned  |
+| T-026 | Implement Archive Screen & Swipe Actions    | 📋 todo | unassigned  |
 
 ---
 
