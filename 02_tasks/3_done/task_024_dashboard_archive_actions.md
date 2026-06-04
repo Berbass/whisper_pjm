@@ -52,4 +52,27 @@ All 5 acceptance criteria verified against deliverable code:
 Testing: 160/160 tests pass. `flutter analyze` 0 errors.
 Bonus: pre-existing orphaned tests in `creation_bottom_sheet_test.dart` restored.
 
-**Decision: APPROVED — task moved to done.**
+**2026-06-04 — agent_zed (reviewer — second pass)**
+
+Two issues found and corrected:
+
+**Issue 1 — Critical: T-025 tests accidentally committed in T-024**
+The T-024 commit included 8 T-025 pre-filling tests (and parameterised
+`buildSheet`/`buildAndSettle` helpers) that reference `CreationBottomSheet`
+parameters not yet implemented. These were staged in the working tree by the
+T-023 agent as forward-prep for T-025. The `git add -A` in T-024 picked them
+up, and the validation run tested the reverted working-tree file (without the
+broken tests), masking the failure. Fixed by removing the premature T-025
+tests from `test/creation_bottom_sheet_test.dart`.
+
+**Issue 2 — Minor: stale section comment**
+`reminder_detail_screen.dart` section header still read `Acknowledge & Delete`;
+updated to `Acknowledge & Archive`.
+
+Corrective commit: `fix(T-024): reviewer corrections`
+
+Post-fix validation:
+- `flutter analyze` → 0 errors
+- `flutter test` → **152/152 tests passed** ✅
+
+**Decision: CONFIRMED APPROVED.**
