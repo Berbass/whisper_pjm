@@ -6,10 +6,10 @@
 
 | Status        | Count |
 |---------------|-------|
-| ✅ Done        | 27    |
+| ✅ Done        | 28    |
 | 🔄 In Progress | 0     |
 | 🔍 In Review   | 0     |
-| 📋 To Do       | 1     |
+| 📋 To Do       | 0     |
 
 ---
 
@@ -44,7 +44,7 @@
 | T-025 | Update Creation Form for Pre-filling        | ✅ done | agent_zed   |
 | T-026 | Implement Archive Screen & Swipe Actions    | ✅ done | agent_zed   |
 | T-027 | Implement JSON Export/Import Backup System  | ✅ done | agent_zed   |
-| T-028 | Interactive Tooltip for Repeat Schedules    | 📋 todo | unassigned  |
+| T-028 | Interactive Tooltip for Repeat Schedules    | ✅ done | agent_zed   |
 
 ---
 
